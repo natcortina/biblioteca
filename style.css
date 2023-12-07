@@ -1,0 +1,87 @@
+body {
+background-image: url('img/background.jpeg');
+font-family: 'Indie Flower', cursive; 
+}
+
+h1, h2, h3 {
+    font-family: 'Shizuru', sans-serif; 
+}
+
+h1{
+    font-size: 90px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+body {
+    font-family: 'Indie Flower', cursive;
+    margin: 0;
+}
+
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+
+.image:hover img {
+    opacity: 0.7; 
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #000000;
+    font-size: 40px; 
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image:hover .image-text {
+    opacity: 1;
+}
+
+#foto1{
+    width: 500px;
+    height: 500px;
+    margin: 50px;
+    z-index: 1;
+}
+
+
+#foto2{
+    width: 400px;
+    height: 400px;
+    margin: 50px;
+    z-index: 2;
+}
+
+#foto3{
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    z-index: 2;
+}
+
+#foto4{
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    z-index: 2;
+}
+
+#foto5{
+    width: 500px;
+    height: 500px;
+    margin: 50px;
+    z-index: 2;
+}
