@@ -46,9 +46,13 @@ h2{
     transition: opacity 0.3s ease-in-out;
 }
 
-.image:hover img {
-    opacity: 0.3; 
+/* For desktop hover */
+.image:hover img,
+/* For mobile touch events */
+.image.hovered img {
+    opacity: 0.5; /* Reduce image opacity on hover/touch */
 }
+
 
 .image-text {
     position: absolute;
@@ -64,11 +68,10 @@ h2{
 }
 
 
-.image:hover .image-text {
-    opacity: 1;
-}
-
-.image:focus .image-text {
+/* For desktop hover */
+.image:hover .image-text,
+/* For mobile touch events */
+.image.hovered .image-text {
     opacity: 1;
 }
 
